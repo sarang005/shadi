@@ -1,0 +1,31 @@
+export const MESSAGES = {
+  AUTH: {
+    REGISTER_SUCCESS: 'Registration successful',
+    LOGIN_SUCCESS: 'Login successful',
+    LOGOUT_SUCCESS: 'Logout successful',
+    TOKEN_REFRESHED: 'Token refreshed successfully',
+    INVALID_CREDENTIALS: 'Invalid email or password',
+    UNAUTHORIZED: 'Not authorized, token missing or invalid',
+    FORBIDDEN: 'You do not have permission to perform this action',
+    ACCOUNT_INACTIVE: 'Your account has been deactivated. Contact support.',
+    USER_EXISTS: 'User already exists with this email',
+    OTP_SENT: 'OTP sent successfully',
+    OTP_VERIFIED: 'OTP verified successfully',
+    INVALID_OTP: 'Invalid or expired OTP',
+  },
+  USER: {
+    FETCHED: 'User fetched successfully',
+    UPDATED: 'User updated successfully',
+    DELETED: 'User deleted successfully',
+    NOT_FOUND: 'User not found',
+    CREATED: 'User created successfully',
+    LIST_FETCHED: 'Users fetched successfully',
+    PROFILE_FETCHED: 'Profile fetched successfully',
+    PROFILE_UPDATED: 'Profile updated successfully',
+  },
+  GENERAL: {
+    NOT_FOUND: 'Resource not found',
+    SERVER_ERROR: 'Something went wrong',
+    VALIDATION_FAILED: 'Validation failed',
+  },
+};
