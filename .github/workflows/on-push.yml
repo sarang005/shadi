@@ -1,0 +1,28 @@
+name: Main branch code deployment
+on:
+  # workflow-dispatch:
+  push:
+    branches: [main]
+
+jobs:
+  code:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Pulling code
+        run: echo "pulling code"
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: building code
+        run: echo "building code"
+  Test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Testing code
+        run: echo "testing code"    
+  Deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Deploying Code
+        run: echo "Deploying code"
+    
