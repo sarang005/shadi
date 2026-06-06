@@ -5,26 +5,26 @@ on:
     branches: [main, master]
 
 jobs:
-  code:
+  Code:
     runs-on: ubuntu-latest
     steps:
       - name: Pulling code
         run: echo "pulling code"
-  build:
+  Build:
     runs-on: ubuntu-latest
-    needs: code
+    needs: Code
     steps:
       - name: building code
         run: echo "building code"
   Test:
     runs-on: ubuntu-latest
-    needs: build
+    needs: Build
     steps:
       - name: Testing code
         run: echo "testing code"    
   Deploy:
     runs-on: ubuntu-latest
-    needs: [code, build]
+    needs: [Build, Test]
     steps:
       - name: Deploying Code
         run: echo "Deploying code"
